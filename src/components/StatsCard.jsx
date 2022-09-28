@@ -27,8 +27,10 @@ function StatsCard() {
             </li>
           </ul>
         </div>
-
-        <img src={employee} alt="employee" />
+        <div className={styles.image}>
+          <img src={employee} alt="employee" />
+          <div></div>
+        </div>
       </article>
     </main>
   );

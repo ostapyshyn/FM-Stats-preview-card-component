@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import StatsCard from './components/StatsCard';
 
 function App() {
