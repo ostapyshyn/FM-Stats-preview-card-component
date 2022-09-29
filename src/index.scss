@@ -9,7 +9,8 @@
 :root {
   --very-dark-blue: hsl(233, 47%, 7%); // main background
   --dark-desaturated-blue: hsl(244, 38%, 16%); // card background
-  --soft-violet: hsla(277, 64%, 61%, 50%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --soft-violet2: hsla(277, 64%, 61%, 50%);
 
   --white: hsl(0, 0%, 100%); // main heading, stats
   --wlightly-transparent-white: hsla(0, 0%, 100%, 0.75); // main paragraph

@@ -28,12 +28,13 @@ function StatsCard() {
             </li>
           </ul>
         </div>
-        <picture className={styles.image}>
-          <source media="(min-width: 899px)" srcSet={employee} />
-          <img src={employeeMob} alt="employee" />
+        <div className={styles.image}>
+          <picture>
+            <source media="(min-width: 899px)" srcSet={employee} />
+            <img src={employeeMob} alt="employee" />
+          </picture>
           <div></div>
-        </picture>
-        
+        </div>
       </article>
     </main>
   );
