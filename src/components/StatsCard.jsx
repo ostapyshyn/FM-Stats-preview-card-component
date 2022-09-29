@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../assets/statsCard.module.scss';
 import employee from '../assets/img/image-header-desktop.jpg';
+import employeeMob from '../assets/img/image-header-mobile.jpg';
 
 function StatsCard() {
   return (
@@ -27,10 +28,12 @@ function StatsCard() {
             </li>
           </ul>
         </div>
-        <div className={styles.image}>
-          <img src={employee} alt="employee" />
+        <picture className={styles.image}>
+          <source media="(min-width: 899px)" srcSet={employee} />
+          <img src={employeeMob} alt="employee" />
           <div></div>
-        </div>
+        </picture>
+        
       </article>
     </main>
   );
