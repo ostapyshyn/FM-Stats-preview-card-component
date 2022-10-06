@@ -14,12 +14,18 @@ main {
   }
 
   article {
+    max-width: 1110px;
+    width: 100%;
     .left {
       width: 51.35%;
       max-width: 540px;
       display: flex;
       justify-content: center;
       margin: 0 auto;
+
+      @include mq(900px) {
+        width: auto;
+      }
 
       .info {
         margin-top: 72px;
@@ -29,7 +35,7 @@ main {
         max-width: 403px;
 
         @include mq(900px) {
-          margin-inline: 26.5px;
+          margin-inline: 31.5px;
           max-width: 100%;
           margin-top: 40px;
           align-items: center;
@@ -50,6 +56,7 @@ main {
           @include mq(900px) {
             text-align: center;
             margin-bottom: 40px;
+            max-width: none;
           }
         }
 
@@ -121,8 +128,14 @@ main {
       position: relative;
       background-color: #aa5cdb;
 
+      picture {
+        width: 100%;
+      }
+
       @include mq(900px) {
-        max-width: 100%;
+        width: 100%;
+        // max-width: 100%;
+        margin: 0 auto;
       }
 
       div {

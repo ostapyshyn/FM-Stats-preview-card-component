@@ -33,7 +33,7 @@ function StatsCard() {
 
         <div className={styles.image}>
           <picture>
-            <source media="(min-width: 899px)" srcSet={employee} />
+            <source media="(min-width: 901px)" srcSet={employee} />
             <img src={employeeMob} alt="employee" />
           </picture>
           <div></div>
